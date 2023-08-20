@@ -101,4 +101,3 @@ Update the user's profile information, enabling users to modify their first name
 Deactivate the user's account, allowing users to terminate their profile and associated data.
 
 ---
----
