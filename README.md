@@ -9,9 +9,6 @@ The **Expense Tracker API** is a robust and secure RESTful web service that enab
 - [Authentication](#authentication)
 - [Expense Management](#expense-management)
 - [User Profile](#user-profile)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -104,26 +101,4 @@ Update the user's profile information, enabling users to modify their first name
 Deactivate the user's account, allowing users to terminate their profile and associated data.
 
 ---
-
-## Getting Started
-
-1. Clone the repository to your local machine.
-2. Configure the database settings in the `application.properties` file.
-3. Build and run the application using a Java IDE or Gradle.
-4. Access the API endpoints using tools like Postman or cURL.
-
-For more detailed instructions and API documentation, refer to the codebase and relevant controller and service classes.
-
----
-
-## Contributing
-
-Contributions to the Expense Tracker API are encouraged and appreciated! If you encounter a bug or wish to add a new feature, feel free to open an issue or submit a pull request.
-
----
-
-## License
-
-This project is licensed under the **MIT License**. For more details, refer to the [LICENSE](LICENSE) file.
-
 ---
