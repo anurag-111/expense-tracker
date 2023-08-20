@@ -1,6 +1,19 @@
 # Expense Tracker API
 
-The Expense Tracker API is a RESTful web service that allows users to track their expenses and manage their profiles. It provides endpoints for user authentication, expense management, and user profile operations. The API is built using Spring Boot and integrates with a database for data storage.
+The **Expense Tracker API** is a robust and secure RESTful web service that enables users to effortlessly manage their expenses and maintain their user profiles. Built on the **Spring Boot** framework, this API offers various endpoints for user authentication, expense management, and user profile operations.
+
+---
+
+## Table of Contents
+
+- [Authentication](#authentication)
+- [Expense Management](#expense-management)
+- [User Profile](#user-profile)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
 
 ## Authentication
 
@@ -8,13 +21,15 @@ The Expense Tracker API is a RESTful web service that allows users to track thei
 
 **Endpoint:** `POST /login`
 
-Authenticate a user and receive a JSON Web Token (JWT) for accessing protected resources.
+Authenticate a user with their email and password to receive a **JSON Web Token (JWT)** for accessing protected resources.
 
 ### Register
 
 **Endpoint:** `POST /register`
 
-Register a new user and create a user profile.
+Register a new user by providing their personal details and create a user profile.
+
+---
 
 ## Expense Management
 
@@ -22,49 +37,51 @@ Register a new user and create a user profile.
 
 **Endpoint:** `GET /expenses`
 
-Retrieve a paginated list of all expenses.
+Retrieve a paginated list of all expenses, providing insights into past expenditures.
 
 ### Get Expense by ID
 
 **Endpoint:** `GET /expenses/{id}`
 
-Retrieve a specific expense by its ID.
+Retrieve a specific expense by its unique ID, including details such as description, amount, category, and date.
 
 ### Delete Expense
 
 **Endpoint:** `DELETE /expenses`
 
-Delete an expense by its ID.
+Delete an expense by its ID, removing it from the records.
 
 ### Create Expense
 
 **Endpoint:** `POST /expenses`
 
-Create a new expense record.
+Create a new expense record by providing information like description, amount, category, and date.
 
 ### Update Expense
 
 **Endpoint:** `PUT /expenses/{id}`
 
-Update an existing expense by its ID.
+Update an existing expense by its ID, modifying attributes like description, amount, category, and date.
 
 ### Get Expenses by Category
 
 **Endpoint:** `GET /expenses/category`
 
-Retrieve expenses filtered by category.
+Retrieve expenses filtered by specific categories, offering insights into spending patterns.
 
 ### Get Expenses by Name
 
 **Endpoint:** `GET /expenses/name`
 
-Retrieve expenses filtered by name keyword.
+Retrieve expenses filtered by name keyword, allowing users to search for specific expenditures.
 
 ### Get Expenses by Date
 
 **Endpoint:** `GET /expenses/date`
 
-Retrieve expenses filtered by date range.
+Retrieve expenses filtered by a date range, helping users analyze their spending over a specific period.
+
+---
 
 ## User Profile
 
@@ -72,27 +89,41 @@ Retrieve expenses filtered by date range.
 
 **Endpoint:** `GET /profile`
 
-Retrieve the user's profile information.
+Retrieve the user's profile information, including their unique ID, first name, last name, and email.
 
 ### Update User Profile
 
 **Endpoint:** `PUT /profile`
 
-Update the user's profile information.
+Update the user's profile information, enabling users to modify their first name and last name.
 
 ### Deactivate User Account
 
 **Endpoint:** `DELETE /deactivate`
 
-Deactivate the user's account.
+Deactivate the user's account, allowing users to terminate their profile and associated data.
+
+---
 
 ## Getting Started
 
-To run the Expense Tracker API locally, follow these steps:
-
-1. Clone the repository.
-2. Configure the database settings in the application.properties file.
+1. Clone the repository to your local machine.
+2. Configure the database settings in the `application.properties` file.
 3. Build and run the application using a Java IDE or Gradle.
-4. Access the API endpoints using a tool like Postman or cURL.
+4. Access the API endpoints using tools like Postman or cURL.
 
-For more detailed instructions and API documentation, refer to the codebase and the relevant controller and service classes.
+For more detailed instructions and API documentation, refer to the codebase and relevant controller and service classes.
+
+---
+
+## Contributing
+
+Contributions to the Expense Tracker API are encouraged and appreciated! If you encounter a bug or wish to add a new feature, feel free to open an issue or submit a pull request.
+
+---
+
+## License
+
+This project is licensed under the **MIT License**. For more details, refer to the [LICENSE](LICENSE) file.
+
+---
