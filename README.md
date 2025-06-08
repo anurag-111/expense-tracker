@@ -9,6 +9,7 @@ The **Expense Tracker API** is a robust and secure RESTful web service that enab
 - [Authentication](#authentication)
 - [Expense Management](#expense-management)
 - [User Profile](#user-profile)
+- [Logs](#logs)
 
 ---
 
@@ -101,3 +102,12 @@ Update the user's profile information, enabling users to modify their first name
 Deactivate the user's account, allowing users to terminate their profile and associated data.
 
 ---
+
+## Logs
+
+### Fetch Application Logs
+
+**Endpoint:** `GET /logs`
+
+Retrieve the contents of the server log file for troubleshooting purposes.
+
